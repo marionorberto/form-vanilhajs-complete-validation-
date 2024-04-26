@@ -24,19 +24,25 @@
         </h1>
         <section id="container-form-register">
             <form action method="POST">
+                <h3 class="sign-up-text">Sign Up</h3>
                 <div class="m-input">
-                    <input type="text" name="username" id="username" placeholder="Username">
-                </div>
-                <div class="m-input">
+                    <label for="email">Email <sup class="text-danger">*</sup></label>
                     <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
                 <div class="m-input">
+                    <label for="password">Username<sup class="text-danger">*</sup></label>
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="m-input">
+                    <label for="bi">BI - Bilhete de Identidade<sup class="text-danger">*</sup></label>
                     <input type="text" name="bi" id="bi" placeholder="BI">
                 </div>
                 <div class="m-input">
+                    <label for="bi">Phone number<sup class="text-danger">*</sup></label>
                     <input type="tel" name="phone" id="phone" placeholder="Phone number">
                 </div>
                 <div class="m-input">
+                    <label for="bi">Country<sup class="text-danger">*</sup></label>
                     <input type="text" name="country" id="country" placeholder="Country">
                 </div>
                 <div class="m-input">
@@ -46,6 +52,7 @@
                     </select>
                     <input type="file" name="file" id="file">
                 </div>
+
                 <div class="m-input">
                     <input class="m-input" type="password" name="password" id="password" placeholder="Password">
                     <input type="password" name="password" id="password" placeholder="Repeat-Password">

@@ -10,28 +10,29 @@
 
 <body>
     <nav>
-        <h1 class="logo">LOGO</h1>
+        <h1 id="logo">LOGO</h1>
         <ul>
             <li><a href="./login.html">Login</a></li>
             <li><a href="./register.html">Register</a></li>
         </ul>
     </nav>
-    <div>
-        <h1>
-            <span class="logo">LOGO</span>
-            Faça o seu Registro <br>
+    <div id="container-main">
+        <h1 id="logo">
+            <span>LOGO</span> <br>
+            Faça o seu Login <br>
             na plataforma
         </h1>
         <section id="container-form-login">
 
             <form action method="POST">
+                <h3 class="sign-in-text">Sign In</h3>
                 <div>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">Email <sup class="text-danger">*</sup></label>
+                    <input type="email" name="email" id="email" placeholder="E-mail">
                 </div>
                 <div>
-                    <label for="password">Passeword</label>
-                    <input type="password" name="password" id="password">
+                    <label for="password">Password<sup class="text-danger">*</sup></label>
+                    <input type="password" name="password" id="password" placeholder="Password">
                 </div>
                 <button type="submit">Login</button>
             </form>

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'POPPINS';
+    src: url('./../media/fonts/Poppins/Poppins-Medium.ttf');
+}
+
 :root {
    --color-black-primary: #000; 
    --color-black-secondary: #181717; 
@@ -16,6 +21,8 @@ body, html {
     width: 100vw;
     height: 100vh;
     background-color: var(--color-black-primary);
+    overflow-x: hidden;
+    font-family: 'POPPINS';
 }
 
 nav {
@@ -34,7 +41,7 @@ ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
 }
 
 li {
@@ -53,8 +60,8 @@ form {
     background-color: var(--color-black-secondary);
     padding: 30px;
     width: 30rem;
-    height: 20rem;
-    margin: 60px auto;
+    margin-top: 60px;
+    border-radius: 3px;
 }
 
 #username, #email {
@@ -63,11 +70,15 @@ form {
 
 button[type] {
     background-color: var(--color-violet-primary);
-    padding: 10px;
     color: var(--color-white);
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+input {
+    margin-bottom: 8px;
+    font-size: medium;
 }
 
 label {
@@ -76,6 +87,8 @@ label {
 
 #logo {
     color: var(--color-white);
+    font-weight: 600;
+    font-size: 2.8rem;
 }
 
 li > a {
@@ -84,5 +97,41 @@ li > a {
 
 #container-information-contact{
     color: var(--color-violet-secondary);
-    
+    margin-top: 14rem;
+      margin-bottom: 25px;
+}
+
+input, button {
+    padding: 15px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+input:focus, button:focus{
+    outline: 1px solid #a631fa; 
+    box-shadow: 2px 2px 2px #a631fa;
+}
+
+button {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.text-danger {
+    color: rgb(157, 98, 98);
+}
+
+.sign-in-text{
+    color: var(--color-white);
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 24px auto;
 }

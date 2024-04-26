@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Validation</title>
     <link rel="stylesheet" href="./assets/css/style-login.css">
+    <link rel="stylesheet" href="./assets/css/icofont.min.css">
 </head>
 
 <body>
     <nav>
-        <h1 id="logo">LOGO</h1>
+        <h1 id="logo"><img src="./assets/media/images/flowers-images-svg/shape-94.svg" alt=""><span
+                id="text-logo">Ubommu</span></h1>
         <ul>
             <li><a href="./login.html">Login</a></li>
             <li><a href="./register.html">Register</a></li>
@@ -18,13 +20,15 @@
     </nav>
     <div id="container-main">
         <h1 id="logo">
-            <span>LOGO</span> <br>
+            <img src="./assets/media/images/flowers-images-svg/shape-94.svg" alt=""><span id="text-logo">Ubommu</span>
+            <br>
             Faça o seu Login <br>
             na plataforma
         </h1>
         <section id="container-form-login">
 
-            <form action method="POST">
+            <form action="./welcome.html" method="get">
+                <span class="have-account">Don't have account? <a href="./register.html">Register</a></span>
                 <h3 class="sign-in-text">Sign In</h3>
                 <div>
                     <label for="email">Email <sup class="text-danger">*</sup></label>
@@ -38,12 +42,6 @@
             </form>
         </section>
     </div>
-    <ul id="container-information-contact">
-        <li>Termos of use</li> |
-        <li> Privacy Policy</li> |
-        <li>About</li> |
-        <li>Contact</li>
-    </ul>
     <script src="./assets/js/script-login.js"></script>
 </body>
 

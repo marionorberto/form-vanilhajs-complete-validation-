@@ -1,0 +1,125 @@
+:root {
+   --color-black-primary: #000;
+   --color-black-secondary: #181717;
+   --color-white: #fff;
+   --color-violet-primary: #500486;
+   --color-violet-secondary: #a631fa;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black-primary);
+    overflow-x: hidden;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 18px;
+    width: 100%;
+    background-color: var(--color-black-secondary);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    margin: 5px auto;
+}
+
+#container-form-register {
+    background-color: var(--color-black-secondary);
+    padding: 30px;
+    width: 30rem;
+    margin-top: 70px;
+    margin-bottom: 90px;
+    gap: 10px;
+    border-radius: 5px;
+}
+
+#username, #email {
+    display: block;
+}
+
+
+button[type] {
+    background-color: var(--color-violet-primary);
+    padding: 10px;
+    color: var(--color-white);
+    border: none;
+    cursor: pointer;
+}
+
+label {
+    color: var(--color-white);
+}
+
+#logo {
+    color: var(--color-white);
+}
+
+li  a {
+    color: #bd73f2;
+}
+
+#container-information-contact{
+    color: var(--color-violet-secondary);
+    margin-bottom: 40px;
+}
+
+#text{
+    color: var(--color-white);
+}
+
+#container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px auto;
+}
+
+input, button{
+    width: 100%;
+    padding: 13px;
+    font-size: medium;
+    border-radius: 3px;
+}
+
+input:focus, button:focus{
+    outline: 1px solid #a631fa; 
+    box-shadow: 2px 2px 2px #a631fa;
+}
+
+div + select {
+    display: flex;
+    gap: 2px;
+}
+
+.m-input {
+    margin-bottom: 9px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register validation</title>
+    <link rel="stylesheet" href="./assets/css/style-register.css">
+</head>
+
+<body>
+    <nav>
+        <h1 id="logo">LOGO</h1>
+        <ul>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="./register.html">Register</a></li>
+        </ul>
+    </nav>
+    <div id="container-main">
+        <h1 id="text">
+            <span id="logo">LOGO</span> <br>
+            Faça o seu Login <br>
+            na plataforma
+        </h1>
+        <section id="container-form-register">
+            <form action method="POST">
+                <div class="m-input">
+                    <input type="text" name="username" id="username" placeholder="Username">
+                </div>
+                <div class="m-input">
+                    <input type="email" name="email" id="email" placeholder="E-mail">
+                </div>
+                <div class="m-input">
+                    <input type="text" name="bi" id="bi" placeholder="BI">
+                </div>
+                <div class="m-input">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                </div>
+                <div class="m-input">
+                    <input type="text" name="country" id="country" placeholder="Country">
+                </div>
+                <div class="m-input">
+                    <select name="sex" id="sex">
+                        <option value="M">M</option>
+                        <option value="F">F</option>
+                    </select>
+                    <input type="file" name="file" id="file">
+                </div>
+                <div class="m-input">
+                    <input class="m-input" type="password" name="password" id="password" placeholder="Password">
+                    <input type="password" name="password" id="password" placeholder="Repeat-Password">
+                </div>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </div>
+    <ul id="container-information-contact">
+        <li>Termos of use </li> |
+        <li> Privacy Policy </li> |
+        <li>About </li> |
+        <li>Contact </li>
+    </ul>
+    <script src="./assets/js/script-register.js"></script>
+</body>
+
+</html>

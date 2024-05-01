@@ -25,28 +25,59 @@
             na plataforma
         </h1>
         <section id="container-form-register">
-            <form action="./welcome.html" method="get">
+            <form class="form" action="./welcome.html" method="get">
                 <span class="have-account">Already have account? <a href="./login.html">Login</a></span>
                 <h3 class="sign-up-text">Sign Up</h3>
-                <div class="m-input">
-                    <label for="email">Email <sup class="text-danger">*</sup></label>
-                    <input type="email" name="email" id="email" placeholder="E-mail">
+                <div>
+                    <div>
+                        <label for="firstname">Primeiro Nome <sup class="text-danger">*</sup></label>
+                        <div class="container-input-password">
+                            <input type="firstname" name="firstname" id="firstname" placeholder="Primeiro Nome">
+                            <span class="input-password">o</span>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="lastname">Último Nome <sup class="text-danger">*</sup></label>
+                        <div class="container-input-password">
+                            <input type="lastname" name="lastname" id="lastname" placeholder="Último Nome">
+                            <span class="input-password">o</span>
+                        </div>
+                    </div>
                 </div>
                 <div class="m-input">
-                    <label for="password">Username<sup class="text-danger">*</sup></label>
-                    <input type="text" name="username" id="username" placeholder="Username">
+                    <label for="email">Email <sup class="text-danger">*</sup></label>
+                    <div class="container-input-password">
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <span class="input-password">o</span>
+                    </div>
+                </div>
+                <div class="m-input">
+                    <label for="username">Username<sup class="text-danger">*</sup></label>
+                    <div class="container-input-password">
+                        <input type="text" name="username" id="username" placeholder="Username">
+                        <span class="input-password">o</span>
+                    </div>
                 </div>
                 <div class="m-input">
                     <label for="bi">BI - Bilhete de Identidade<sup class="text-danger">*</sup></label>
-                    <input type="text" name="bi" id="bi" placeholder="BI">
+                    <div class="container-input-password">
+                        <input type="text" name="bi" id="bi" placeholder="BI">
+                        <span class="input-password">o</span>
+                    </div>
                 </div>
                 <div class="m-input">
-                    <label for="bi">Phone number<sup class="text-danger">*</sup></label>
-                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                    <label for="phone">Phone number<sup class="text-danger">*</sup></label>
+                    <div class="container-input-password">
+                        <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                        <span class="input-password">o</span>
+                    </div>
                 </div>
                 <div class="m-input">
                     <label for="bi">Country<sup class="text-danger">*</sup></label>
-                    <input type="text" name="country" id="country" placeholder="Country">
+                    <div class="container-input-password">
+                        <input type="text" name="country" id="country" placeholder="Country">
+                        <span class="input-password">o</span>
+                    </div>
                 </div>
                 <div class="m-input">
                     <select name="sex" id="sex">
@@ -57,14 +88,20 @@
                 </div>
 
                 <div class="m-input">
-                    <input class="m-input" type="password" name="password" id="password" placeholder="Password">
-                    <input type="password" name="password" id="password" placeholder="Repeat-Password">
+                    <div class="container-input-password">
+                        <input class="m-input" type="password" name="password" id="password" placeholder="Password">
+                        <span class="input-password">o</span>
+                    </div>
+                    <div class="container-input-password">
+                        <input type="password" name="repeat-password" id="repeat-password"
+                            placeholder="Repeat-Password">
+                        <span class="input-password">o</span>
+                    </div>
                 </div>
                 <button type="submit">Register</button>
             </form>
         </section>
     </div>
-    <span id="mode-ligh-dark"></span>
     <script src="./assets/js/script-register.js"></script>
 </body>
 

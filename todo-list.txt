@@ -1,0 +1,7 @@
+[v] - responsibility
+[] - icons
+[] - put icons into input
+[] - put icons
+[] - write validation code
+[] - jws code for autentication
+[] - auth2 code for autentication

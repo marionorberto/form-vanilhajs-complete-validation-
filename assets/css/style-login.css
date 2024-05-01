@@ -27,8 +27,9 @@ body, html {
     height: 100vh;
     background-color: var(--color-black-primary);
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: scroll;
     font-family: 'POPPINS';
+    margin-bottom: 4rem;
 }
 
 nav {
@@ -51,6 +52,7 @@ ul {
 }
 
 li {
+    position: relative;
     list-style: none;
 }
 
@@ -58,15 +60,35 @@ a {
     text-decoration: none;
 } 
 
+ul > li > a::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: -5px;
+    margin-top: 8px;
+    background-color: #a631fa;
+    height: 3px;
+    width: 100%;
+    scale: 0;
+    transform-origin: right;
+    transition: all 0.4s ;
+}
+
+ul >li > a:hover::after {
+    color: #bd73f2;
+    transition: all 0.4s;
+    scale: 1;
+}
+
 form {
     margin: 5px auto;
 }
 
 #container-form-login {
     background-color: var(--color-black-secondary);
-    padding: 30px;
-    width: 30rem;
-    margin-top: 60px;
+    padding: 28px;
+    width: 27rem;
+    margin-top: 80px;
     border-radius: 3px;
 }
 
@@ -109,12 +131,6 @@ li > a {
     color: var(--color-violet-secondary);
 }
 
-#container-information-contact{
-    color: var(--color-violet-secondary);
-    margin-top: 14rem;
-      margin-bottom: 25px;
-}
-
 input, button {
     padding: 15px;
     width: 100%;
@@ -136,7 +152,7 @@ button {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 60px;
+    margin-top: 10px;
 }
 
 .text-danger {
@@ -178,4 +194,176 @@ button {
 img {
     width: 40px;
     rotate: 30deg;
+}
+
+.container-input-password {
+    position: relative;
+
+}
+
+.input-password {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+
+
+
+
+/* phone layout:*/
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px) {
+    
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-black-primary);
+    overflow: auto;
+    font-family: 'POPPINS';
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    background-color: var(--color-black-secondary);
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+} 
+
+form {
+    margin: 5px auto;
+}
+
+#container-form-login {
+    background-color: var(--color-black-secondary);
+    padding: 24px;
+    width: 20rem;
+    margin-top: 60px;
+    border-radius: 3px;
+}
+
+#username, #email {
+    display: block;
+}
+
+button[type] {
+    background-color: var(--color-violet-primary);
+    color: var(--color-white);
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+input {
+    margin-bottom: 8px;
+    font-size: smaller;
+}
+
+label {
+    color: var(--color-white);
+}
+
+#logo {
+    color: var(--color-white);
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+#text-logo {
+    font-size: 1rem;
+    font-weight: bolder;
+    font-style: normal;
+    text-align: center;
+    font-family: 'POPPINS2';
+    color: #f8eefc;
+}
+
+li > a {
+    color: var(--color-violet-secondary);
+}
+
+
+input, button {
+    padding: 11px;
+    width: 100%;
+    border-radius: 3px;
+}
+
+input:focus, button:focus{
+    outline: 1px solid #a631fa; 
+    box-shadow: 2px 2px 2px #a631fa;
+}
+
+button {
+    margin-top: 10px;
+    font-size: 1.3rem;
+}
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+    margin-top: 80px;
+}
+
+.text-danger {
+    color: rgb(157, 98, 98);
+}
+
+.sign-in-text{
+    color: var(--color-white);
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 24px auto;
+}
+
+#mode-ligh-dark{
+    display: none;
+}
+
+.have-account {
+    display: flex;
+    justify-content: end;
+    gap: 4px;
+    color: var(--color-white);
+    font-size: 90%;
+}
+
+img {
+    width: 35px;
+    rotate: 30deg;
+}
+
 }

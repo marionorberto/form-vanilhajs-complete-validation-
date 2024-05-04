@@ -143,6 +143,16 @@ li  a {
     justify-content: space-around;
     margin: 20px auto;
 }
+.div-container-firstname-lastname{
+    display: flex;
+    max-width: 100%;
+    gap: 3px;
+    margin-bottom: 2px;
+}
+
+input[name='firstname'], input[name='lastname']{
+    width: 322px;
+}
 
 input, button{
     width: 100%;

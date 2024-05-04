@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register validation</title>
     <link rel="stylesheet" href="./assets/css/style-register.css">
+    <link rel="stylesheet" href="./assets/media/bootstrap-icons/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -28,19 +29,17 @@
             <form class="form" action="./welcome.html" method="get">
                 <span class="have-account">Already have account? <a href="./login.html">Login</a></span>
                 <h3 class="sign-up-text">Sign Up</h3>
-                <div>
+                <div class="div-container-firstname-lastname">
                     <div>
                         <label for="firstname">Primeiro Nome <sup class="text-danger">*</sup></label>
                         <div class="container-input-password">
                             <input type="firstname" name="firstname" id="firstname" placeholder="Primeiro Nome">
-                            <span class="input-password">o</span>
                         </div>
                     </div>
                     <div>
                         <label for="lastname">Último Nome <sup class="text-danger">*</sup></label>
                         <div class="container-input-password">
                             <input type="lastname" name="lastname" id="lastname" placeholder="Último Nome">
-                            <span class="input-password">o</span>
                         </div>
                     </div>
                 </div>
@@ -48,35 +47,35 @@
                     <label for="email">Email <sup class="text-danger">*</sup></label>
                     <div class="container-input-password">
                         <input type="email" name="email" id="email" placeholder="E-mail">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-envelope-fill"></i></span>
                     </div>
                 </div>
                 <div class="m-input">
                     <label for="username">Username<sup class="text-danger">*</sup></label>
                     <div class="container-input-password">
                         <input type="text" name="username" id="username" placeholder="Username">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-person-fill"></i></span>
                     </div>
                 </div>
                 <div class="m-input">
                     <label for="bi">BI - Bilhete de Identidade<sup class="text-danger">*</sup></label>
                     <div class="container-input-password">
                         <input type="text" name="bi" id="bi" placeholder="BI">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-credit-card-2-front-fill"></i></span>
                     </div>
                 </div>
                 <div class="m-input">
                     <label for="phone">Phone number<sup class="text-danger">*</sup></label>
                     <div class="container-input-password">
                         <input type="tel" name="phone" id="phone" placeholder="Phone number">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-telephone-fill"></i></span>
                     </div>
                 </div>
                 <div class="m-input">
                     <label for="bi">Country<sup class="text-danger">*</sup></label>
                     <div class="container-input-password">
                         <input type="text" name="country" id="country" placeholder="Country">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-globe"></i></span>
                     </div>
                 </div>
                 <div class="m-input">
@@ -90,12 +89,14 @@
                 <div class="m-input">
                     <div class="container-input-password">
                         <input class="m-input" type="password" name="password" id="password" placeholder="Password">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-eye-fill"></i></span>
+                        <!-- <span class="input-password"><i class="bi bi-eye-slash-fill"></i></span> -->
                     </div>
                     <div class="container-input-password">
                         <input type="password" name="repeat-password" id="repeat-password"
                             placeholder="Repeat-Password">
-                        <span class="input-password">o</span>
+                        <span class="input-password"><i class="bi bi-eye-fill"></i></span>
+                        <!-- <span class="input-password"><i class="bi bi-eye-slash-fill"></i></span> -->
                     </div>
                 </div>
                 <button type="submit">Register</button>

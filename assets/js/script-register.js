@@ -9,6 +9,8 @@ const inputEmail = document.querySelector('#email');
 const inputCountry = document.querySelector('#country');
 const inputBI= document.querySelector('#bi');
 
+const navbarElemento = document.querySelector('#navbar');
+
 
 const firstnameErrors = [];
 const lastnameErrors = [];
@@ -336,3 +338,9 @@ class Validator {
     }
     
 }
+
+window.addEventListener('scroll', () => {
+    if(window.scrollY > 50){
+        navbarElemento.style.top = '0';
+    }
+});

@@ -96,12 +96,19 @@ form {
     display: block;
 }
 
-button[type] {
+button[type='submit'] {
     background-color: var(--color-violet-primary);
     color: var(--color-white);
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
+    translate: all 0.3s;
+}
+
+button[type]:hover {
+    box-shadow: 2px 2px 17px 6px rgb(0, 0, 0);
+    transform: scale(0.99);
+    background-color: #580b8f;
 }
 
 input {
